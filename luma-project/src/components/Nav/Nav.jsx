@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { CollectionBtn } from '../Button/CollectionBtn'
 import './Nav.css'
 export function Nav(){
     const [isOpen, setIsOpen] = useState(false)
@@ -11,9 +12,9 @@ export function Nav(){
                 <a href="#">About</a>
                 <a href="#">Contact</a>
             </div>
-            <button className='explore-btn'>Explore Collection <i className="fa-solid fa-arrow-right"></i></button>
+            < CollectionBtn/>
 
-            <p onClick={() => setIsOpen(!isOpen)}><i class="fa-solid fa-bars"></i></p>
+            <p onClick={() => setIsOpen(!isOpen)}><i className="fa-solid fa-bars"></i></p>
         </nav>
     )
 }

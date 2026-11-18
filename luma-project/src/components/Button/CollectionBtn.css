@@ -1,0 +1,19 @@
+.explore-btn {
+  padding: 10px 20px;
+  background-color: rgb(141, 133, 96);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.explore-btn:hover {
+  background-color: rgb(107, 101, 73);
+}
+.explore-btn .fa-arrow-right {
+  margin-left: 20px;
+}

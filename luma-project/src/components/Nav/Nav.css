@@ -8,21 +8,21 @@ nav {
   background-color: rgb(236, 233, 219);
   font-size: 18px;
 }
-h1 {
+nav h1 {
   font-size: 2.3em;
   letter-spacing: 15px;
   font-weight: 500;
 }
-.mobile-menu {
+nav .mobile-menu {
   display: flex;
   gap: 50px;
   font-size: 1em;
 }
-a {
+nav a {
   color: black;
   position: relative;
 }
-a::before {
+nav a::before {
   content: "";
   position: absolute;
   width: 0%;
@@ -31,25 +31,29 @@ a::before {
   background-color: black;
   transition: 0.3s;
 }
-a:hover::before {
+nav a:hover::before {
   width: 100%;
 }
-button {
+nav button {
   padding: 10px 20px;
-  background-color: rgb(111, 105, 76);
+  background-color: rgb(141, 133, 96);
   color: white;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   font-size: 0.8em;
   cursor: pointer;
+  transition: 0.2s;
+}
+nav button:hover {
+  background-color: rgb(101, 96, 69);
 }
 
-.fa-arrow-right {
+nav .fa-arrow-right {
   margin-left: 20px;
 }
-p {
+nav p {
   font-size: 1.4em;
   color: white;
   background-color: rgb(111, 105, 76);
@@ -60,26 +64,27 @@ p {
 
 /* Medium Screens */
 @media (max-width: 1100px) {
-  .mobile-menu {
+  nav .mobile-menu {
     gap: 25px;
+    z-index: 999;
   }
 
   nav {
     font-size: 16px;
   }
 
-  h1 {
+  nav h1 {
     letter-spacing: 10px;
   }
 
-  button {
+  nav button {
     padding: 9px 15px;
   }
 }
 
 /* Tablets */
 @media (max-width: 850px) {
-  .mobile-menu {
+  nav .mobile-menu {
     gap: 15px;
   }
 
@@ -87,26 +92,26 @@ p {
     font-size: 14px;
   }
 
-  h1 {
+  nav h1 {
     font-size: 2em;
     letter-spacing: 7px;
   }
 
-  button {
+  nav button {
     font-size: 0.75em;
   }
 }
 
 /* Mobile */
 @media (max-width: 650px) {
-  .mobile-menu,
-  .explore-btn {
+  nav .mobile-menu,
+  nav .explore-btn {
     display: none;
   }
-  p {
+  nav p {
     display: block;
   }
-  .menu-toggle {
+  nav .menu-toggle {
     display: flex;
   }
 
@@ -116,12 +121,12 @@ p {
     box-sizing: border-box;
   }
 
-  h1 {
+  nav h1 {
     font-size: 1.8em;
     letter-spacing: 8px;
   }
 
-  .mobile-menu {
+  nav .mobile-menu {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -138,18 +143,18 @@ p {
     transition: 0.3s ease;
   }
 
-  .mobile-menu.active {
+  nav .mobile-menu.active {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
   }
 
-  .mobile-menu a {
+  nav .mobile-menu a {
     padding: 16px 5px;
     border-bottom: 1px solid rgba(111, 105, 76, 0.2);
   }
 
-  .mobile-menu button {
+  nav .mobile-menu button {
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -162,7 +167,7 @@ p {
     padding: 0 15px;
   }
 
-  h1 {
+  nav h1 {
     font-size: 1.5em;
     letter-spacing: 5px;
   }
