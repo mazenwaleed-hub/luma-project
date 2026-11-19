@@ -1,0 +1,122 @@
+.collection {
+    margin-top: 40px;
+}
+.headerCollection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+.headerCollection h1 {
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+.carts {
+    margin: 50px 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.carts .cart {
+    font-size: 19px;
+}
+.carts .cart .image {
+    width: 350px;
+    height: 300px;
+    overflow: hidden;
+
+}
+.carts .cart img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+.carts .cart img:hover {
+    width: 110%;
+}
+.carts .cart h3 {
+    color: rgb(28, 28, 28);
+    letter-spacing: 1.2px;
+    font-weight: 600;
+}
+.carts .cart p {
+    color: rgb(47, 47, 47);
+    font-weight: 400;
+}
+/* Tablet */
+@media (max-width: 1024px) {
+    .carts {
+        margin: 40px 30px;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .carts .cart {
+        width: calc(50% - 25px);
+        font-size: 17px;
+    }
+
+    .carts .cart .image {
+        width: 100%;
+        height: 280px;
+    }
+}
+
+/* Mobile */
+/* Mobile */
+@media (max-width: 768px) {
+    .headerCollection {
+        font-size: 17px;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .headerCollection h1 {
+        letter-spacing: 3px;
+    }
+
+    .carts {
+        margin: 35px 15px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .carts .cart {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .carts .cart .image {
+        width: 100%;
+        height: 180px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .headerCollection {
+        font-size: 15px;
+    }
+
+    .carts {
+        margin: 30px 10px;
+        gap: 10px;
+    }
+
+    .carts .cart {
+        font-size: 12px;
+    }
+
+    .carts .cart .image {
+        height: 140px;
+    }
+
+    .carts .cart h3 {
+        font-size: 14px;
+    }
+
+    .carts .cart p {
+        font-size: 12px;
+    }
+}

@@ -9,7 +9,7 @@ export function HeroSection() {
           Designed <br /> For Living.
         </h1>
         <p>Thoughful furniture for spaces that feel like home.</p>
-        <CollectionBtn />
+        <CollectionBtn text={"Explore Collection"}/>
       </div>
     </section>
   );

@@ -12,7 +12,7 @@ export function Nav(){
                 <a href="#">About</a>
                 <a href="#">Contact</a>
             </div>
-            < CollectionBtn/>
+            < CollectionBtn text={"Explore Collection"}/>
 
             <p onClick={() => setIsOpen(!isOpen)}><i className="fa-solid fa-bars"></i></p>
         </nav>

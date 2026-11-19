@@ -1,8 +1,8 @@
 import '../Button/CollectionBtn.css'
-export function CollectionBtn() {
+export function CollectionBtn( {text} ) {
   return (
     <button className="explore-btn">
-      Explore Collection <i className="fa-solid fa-arrow-right"></i>
+      {text} <i className="fa-solid fa-arrow-right"></i>
     </button>
   );
 }
