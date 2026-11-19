@@ -58,6 +58,8 @@
     padding: 0 30px;
     margin-top: 120px;
     font-size: 22px;
+    align-items: center;
+
   }
 
   .HeroSection .content h1 {
@@ -67,6 +69,8 @@
 
   .HeroSection .content p {
     font-size: 0.7em;
+    text-align: center;
+
   }
 }
 
@@ -82,7 +86,6 @@
     padding: 0 20px;
     margin-top: 110px;
     font-size: 18px;
-    align-items: center;
   }
 
   .HeroSection .content h1 {
@@ -92,6 +95,5 @@
 
   .HeroSection .content p {
     font-size: 0.75em;
-    text-align: center;
   }
 }

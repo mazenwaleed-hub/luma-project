@@ -44,7 +44,7 @@
     font-weight: 400;
 }
 /* Tablet */
-@media (max-width: 1024px) {
+@media (max-width: 1638px) {
     .carts {
         margin: 40px 30px;
         gap: 25px;
@@ -103,7 +103,6 @@
         margin: 30px 10px;
         gap: 10px;
     }
-
     .carts .cart {
         font-size: 12px;
     }

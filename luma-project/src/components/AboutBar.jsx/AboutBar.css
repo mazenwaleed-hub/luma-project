@@ -1,0 +1,46 @@
+.aboutBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    margin-top: 40px;
+    border-top: 1px solid #e5e0d8;
+    border-bottom: 1px solid #e5e0d8;
+}
+
+.aboutBar .item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #333;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.aboutBar .item i {
+    font-size: 20px;
+    color: #9b846b;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .aboutBar {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 15px 10px;
+        margin-top: 15px;
+    }
+
+    .aboutBar .item {
+        gap: 5px;
+        font-size: 11px;
+        letter-spacing: 0;
+        white-space: nowrap;
+    }
+
+    .aboutBar .item i {
+        font-size: 14px;
+    }
+}

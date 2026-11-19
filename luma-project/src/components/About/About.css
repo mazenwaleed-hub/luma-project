@@ -1,7 +1,6 @@
 .About {
     display: flex;
     margin-top: 100px;
-    margin-bottom: 100vh;
 }
 .About .image {
     width: 50%;
