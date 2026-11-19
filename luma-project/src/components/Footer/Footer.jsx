@@ -18,7 +18,7 @@ export function Footer() {
           <a href="/">Home</a>
           <a href="/collection">Collection</a>
           <a href="/about">About Us</a>
-          <a href="/contact">Contact</a>
+          <a href="/contact">Contact </a>
         </div>
 
         <div className="footerContact">
